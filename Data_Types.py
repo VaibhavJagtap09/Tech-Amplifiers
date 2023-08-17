@@ -26,11 +26,25 @@ print(tuple.index(10))#give index of 1st occurance of element
 
 # Dictionary
 dictionary = {
-    "A" : "vaibhav",
-    "B" : "sanjay",
-    "C" : "jagtap",
+    "A" : "Element1",
+    "B" : "Element2",
+    "C" : "Element3",
+    "D" : "Element4",
     }
 print(dictionary["C"] )     # printing elements in dictionary
-dictionary["C"] = "JAGTAP"  # changing values of elements in dictionary
+dictionary["C"] = "ELEMENT3"  # changing values of elements in dictionary
 print(dictionary["C"])
-
+# Print keys in dictionary
+for key in dictionary.keys():
+    print(dictionary.get("key"))
+# Print values in dictionary
+for A in dictionary.values():
+    print(A)
+# Print both
+for A,B in dictionary.items():
+    print(A,":", B)
+# Prints all key value pair
+for i in dictionary.keys():
+    print("Key : ",i," Value: ",dictionary[i])
+#Get value associated to perticular key
+print(dictionary.get("A"))
